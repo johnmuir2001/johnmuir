@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'HurmeGeometric';
+  src: url('./assets/HurmeGeometricSans2/HurmeGeometricSans2Black.otf');
+  font-weight: 900;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'HurmeGeometric';
+  src: url('./assets/HurmeGeometricSans2/HurmeGeometricSans2Bold.otf');
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'HurmeGeometric';
+  src: url('./assets/HurmeGeometricSans2/HurmeGeometricSans2.otf');
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@font-face {
+  font-family: 'HurmeGeometric';
+  src: url('./assets/HurmeGeometricSans2/HurmeGeometricSans2Light.otf');
+  font-weight: 200;
+}
+
+.light {
+  --primary-background: white;
+  --text-color: black;
+  --secondary-background: #eeecec;
+  --accent-color: #00ccff;
+}
+
+.dark {
+  --primary-background: #383838;
+  --text-color: white;
+  --secondary-background: #515151;
+  --accent-color: #00B8E0;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+#App {
+  background-color: var(--secondary-background);
+}
+
+* {
+  font-family: "HurmeGeometric";
+  transition: background-color 0.2s, color 0.2s;
+  color: var(--text-color);
+}
+
+/* hero parallax styling */
+/* text in hero */
+.headerText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  z-index: 20;
+  
+  font-size: 160px;
+  font-weight: 900;
   color: white;
+  mix-blend-mode: difference;
 }
 
-.App-link {
-  color: #61dafb;
+.clouds {
+  transform-origin: bottom;
+  height: 58vh !important;
+  filter: grayscale(100%);
+  animation: cloudScroll 100s linear infinite;
+}
+@keyframes cloudScroll{
+  0%{background-position: 0 0;}
+  100%{background-position: 800px 0;}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.beach {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  min-height: 55%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+}
+
+.about {
+  background-color: blue;
 }

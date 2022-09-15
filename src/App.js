@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import clouds from './assets/images/cloud.jpeg';
 import beach from './assets/images/beach.png';

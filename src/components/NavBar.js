@@ -3,70 +3,40 @@ import styled from "styled-components";
 import arrow from "../assets/images/arrow.png"
 import { ThemeContext } from "../Theme";
 
-const Border = () => {
+const NavBar = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
-        <BorderWrapper>
-            <div className='horizontal top'>
-                <h3>JOHN MUIR</h3>
-
-                <ThemeToggleWrapper>
-                    <ThemeButton col={theme} onClick={() => toggleTheme()}></ThemeButton>
-                    <p className="themeToggleText">{theme === 'light' ? 'dark' : 'light'} mode</p>
-                </ThemeToggleWrapper>
-        
-            </div>
-            <div className='horizontal bottom'>
-                <ScrollIcon src={arrow} alt='arrow pointing down'></ScrollIcon>
-            </div>
-            <div className='vertical left'></div>
-            <div className='vertical right'></div>
-        </BorderWrapper>
+        <NavWrapper>
+            <h3>JOHN MUIR</h3>
+            <ThemeToggleWrapper>
+                <ThemeButton col={theme} onClick={() => toggleTheme()}></ThemeButton>
+                <p className="themeToggleText">{theme === 'light' ? 'dark' : 'light'} mode</p>
+            </ThemeToggleWrapper>
+            {/* <ScrollIcon src={arrow} alt='arrow pointing down'></ScrollIcon> */}
+        </NavWrapper>
     )
 }
 
-export default Border;
+export default NavBar;
 
-const BorderWrapper = styled.div`
-    & > div {
-        background-color: var(--primary-background);
-        position: fixed;
-        box-sizing: border-box;
-        z-index: 10;
-    }
+const NavWrapper = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+    background-color: var(--primary-background);
+    box-sizing: border-box;
+    padding: 0 50px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .horizontal {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 40px;
-        height: 40px;
-        width: 100vw;
-
-        h3 {
-            font-weight: 900;
-            transform: translateY(2px);
-            color: var(--accent-color);
-        }
-    }
-    .top, .left {
-        top: 0;
-        left: 0;
-    }
-    .bottom {
-        bottom: 0;
-        left: 0;
-    }
-
-    .vertical {
-        padding: 40px 0;
-        height: 100vh;
-        width: 40px;
-    }
-    .right {
-        top: 0;
-        right: 0;
+    h3 {
+        transform: translateY(2px);
+        margin: 0;
     }
 `;
 

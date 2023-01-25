@@ -1,30 +1,62 @@
-import React, { useContext } from "react";
-// import styled from 'styled-components';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import styled from 'styled-components';
 import clouds from './assets/images/cloud.jpeg';
 import beach from './assets/images/beach.png';
-import './App.css'
-import Border from './components/Border';
-import { ThemeContext } from './Theme';
+import { projects } from "./ProjectWork";
+import ProjectCard from "./components/ProjectCard";
 
 const App = () => {
-  const { theme } = useContext(ThemeContext);
 
   return (
-    <div id="App" className={`${theme}`}>
-      <Border />
-      <Parallax className="wrapper" pages={2}>
-        <h1 className="headerText">JOHN MUIR</h1>
-        <ParallaxLayer className="clouds" style={{background: `url(${clouds}) repeat-x 0 100% / 800px auto`}} speed={-0.5}></ParallaxLayer>
-        <ParallaxLayer speed={-0.4}>
+    <Parallax id="App" className="wrapper">
+      <h1 className="headerText">JOHN MUIR</h1>
+      <ParallaxGroup>
+        <ParallaxLayer className="clouds deep" style={{background: `url(${clouds}) repeat-x 0 100% / 800px auto`}}></ParallaxLayer>
+        <ParallaxLayer className="back">
           <img className="beach" src={beach} alt="beach"/>
         </ParallaxLayer>
-        <ParallaxLayer className="about" offset={1}>
-          <h1>About</h1>
+      </ParallaxGroup>
+      <ParallaxGroup>
+        <ParallaxLayer className="about">
+          <h1>Projects</h1>
         </ParallaxLayer>
-      </Parallax>
-    </div>
+      </ParallaxGroup>
+    </Parallax>
   );
 }
 
 export default App;
+
+const Parallax = styled.div`
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+`;
+
+const ParallaxGroup = styled.div`
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+
+  .back {
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .deep {
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
+
+  .about {
+    min-height: 100vh;
+  }
+`;
+
+const ParallaxLayer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+`;

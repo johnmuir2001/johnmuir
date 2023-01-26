@@ -1,16 +1,16 @@
-import codeYellow_main from "./assets/images/codeYellow_main.png"
+import codeYellow_main from "./assets/images/codeYellow_main.webp"
 
 export const projects = [
     {
         name: "Project 1",
-        image: codeYellow_main
+        image_main: codeYellow_main
     },
     {
         name: "Project 2",
-        image: codeYellow_main
+        image_main: codeYellow_main
     },
     {
         name: "Project 3",
-        image: codeYellow_main
+        image_main: codeYellow_main
     }
 ]

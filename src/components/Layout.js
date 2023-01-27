@@ -3,13 +3,13 @@ import App from "../App";
 import NavBar from "./NavBar";
 import { ThemeContext } from "../Theme";
 
-const Layout = () => {
+const Layout = ({ children }) => {
     const { theme } = useContext(ThemeContext);
 
     return(
         <div className={`${theme}`}>
             <NavBar />
-            <App />
+            {children}
         </div>
     )
 }

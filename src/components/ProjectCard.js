@@ -33,6 +33,7 @@ const CardWrapper = styled.div`
     justify-content: center;
     align-items: center;
     aspect-ratio: 5/3;
+    cursor: pointer;
 
     &:hover {
         background-size: auto 120%;

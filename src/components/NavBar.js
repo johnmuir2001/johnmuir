@@ -58,8 +58,8 @@ const ThemeToggleWrapper = styled.div`
 `;
 
 const ThemeButton = styled.div`
-    height: 19px;
-    width: 19px;
+    height: 23px;
+    width: 23px;
     background-color: var(--text-color);
     border-radius: 50%;
     cursor: pointer;

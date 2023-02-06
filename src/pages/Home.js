@@ -7,27 +7,18 @@ import ProjectCard from "../components/ProjectCard";
 const Home = () => {
 
   return (
-    <Parallax id="Home" className="wrapper">
-      <h1 className="headerText">JOHN MUIR</h1>
-      <ParallaxGroup>
-        <ParallaxLayer className="clouds deep" style={{background: `url(${clouds}) repeat-x 0 100% / 800px auto`}}></ParallaxLayer>
-        <ParallaxLayer className="back">
-          <img className="beach" src={beach} alt="beach"/>
-        </ParallaxLayer>
-      </ParallaxGroup>
-      <ParallaxGroup>
-        <ParallaxLayer className="about">
-          <h1>Projects</h1>
-          <ProjectCardWrapper>
-            {projects.map((work, index) => {
-              return(
-                <ProjectCard key={index} project={work}/>
-              )
-            })}
-          </ProjectCardWrapper>
-        </ParallaxLayer>
-      </ParallaxGroup>
-    </Parallax>
+    <>
+      <div id="work">
+        <h1>WORK</h1>
+        <ProjectCardWrapper>
+          {projects.map((work, index) => {
+            return(
+              <ProjectCard key={index} project={work}/>
+            )
+          })}
+        </ProjectCardWrapper>
+      </div>
+    </>
   );
 }
 
@@ -74,7 +65,5 @@ const ProjectCardWrapper = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 2200px;
-  background-color: red;
   box-sizing: border-box;
-  padding: 50px;
 `;

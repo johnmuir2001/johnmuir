@@ -25,6 +25,7 @@
 .light {
   --primary-background: white;
   --text-color: black;
+  --secondary-text-color: #494949;
   --secondary-background: #eeecec;
   --accent-color: #00ccff;
 }
@@ -32,13 +33,19 @@
 .dark {
   --primary-background: #383838;
   --text-color: white;
+  --secondary-text-color: #8b8b8b;
   --secondary-background: #515151;
   --accent-color: #00B8E0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
-  margin: 0;
+  margin: 50px 0 0 0;
+  background-color: var(--primary-background);
 }
 
 #Home {

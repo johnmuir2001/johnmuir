@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout"
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
 
@@ -9,11 +8,7 @@ const App = () => {
     <>
       <Routes>
         
-        <Route path="/" element={ 
-          <Layout> 
-            <Home /> 
-          </Layout> 
-        }></Route>
+        <Route path="/" element={ <Home /> }></Route>
 
         <Route path="/:project_name" element={ <ProjectPage /> }></Route>
       </Routes>

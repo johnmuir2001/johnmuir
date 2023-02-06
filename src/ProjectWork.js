@@ -11,12 +11,22 @@ export const projects = [
         project_link: null
     },
     {
-        name: "Project 2",
-        image_main: codeYellow_main
+        name: "Code Nation Website",
+        image_main: codeYellow_main,
+        url: "cn-website",
+        subHeading: "Wordpress, Gatsby, GraphQL",
+        description: "I helped in the development of the Code Nation company website. I was first part of the team that made the website using the framework Gatsby.js and GraphQL. Later the website was updated to Wordpress and again I was part of the team who re-created the website in wordpress.",
+        image_showcase: [codeYellow_main],
+        project_link: null
     },
     {
-        name: "Project 3",
-        image_main: codeYellow_main
+        name: "Code Nation Christmas 2022",
+        image_main: codeYellow_main,
+        url: "cn-chrsitmas-animation",
+        subHeading: "Blender",
+        description: "This was an animation that could be sent out by Code Nation to employers and alumni as part of the Christmas email that was sent out. I came up with the idea and made all the models. This was also my first time animating characters, I animated the santa and the reindeers pulling the sleigh.",
+        image_showcase: [codeYellow_main],
+        project_link: null
     }
 ]
 

@@ -1,19 +1,20 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import arrow from "../assets/images/arrow.png"
+import { Link } from "react-router-dom";
 import { ThemeContext } from "../Theme";
+import paintStroke from "../assets/images/paintStroke.png";
 
 const NavBar = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
         <NavWrapper>
-            <h3>JOHN MUIR</h3>
-            <ThemeToggleWrapper>
+            <h3 style={{backgroundImage: `url(${paintStroke})`}}>JOHN MUIR</h3>
+            <RightNavSection>
+                <Link to="/">WORK</Link>
+                <Link to="/about">ABOUT</Link>
                 <ThemeButton col={theme} onClick={() => toggleTheme()}></ThemeButton>
-                <p className="themeToggleText">{theme === 'light' ? 'dark' : 'light'} mode</p>
-            </ThemeToggleWrapper>
-            {/* <ScrollIcon src={arrow} alt='arrow pointing down'></ScrollIcon> */}
+            </RightNavSection>
         </NavWrapper>
     )
 }
@@ -35,25 +36,29 @@ const NavWrapper = styled.div`
     align-items: center;
 
     h3 {
-        transform: translateY(2px);
         margin: 0;
+        display: grid;
+        place-items: center;
+        background-size: cover;
+        padding: 10px 0 4px 0;
+        width: 130px;
+        color: var(--primary-background);
     }
 `;
 
-const ThemeToggleWrapper = styled.div`
+const RightNavSection = styled.div`
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
 
-    p {
-        margin: 0;
-        width: 60px;
-        direction: rtl;
-        font-size: 9px;
-        transform: translateY(1px) translateX(10px);
-        text-transform: uppercase;
-        opacity: 0;
-        transition: opacity 0.2s, transform 0.2s, color 0.2s;
+    a {
+        margin: 0 20px;
+        text-decoration: none;
+        transform: translateY(2px);
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 0.6;
+        }
     }
 `;
 
@@ -66,6 +71,7 @@ const ThemeButton = styled.div`
     transform: ${(props) => props.col === 'light' ? 'rotate(0deg)' : 'rotate(180deg)'};
     transition: all 0.2s;
     z-index: 10;
+    margin-left: 10px;
 
     &::before {
         position: absolute;
@@ -95,26 +101,5 @@ const ThemeButton = styled.div`
     &:hover + .themeToggleText {
         opacity: 1;
         transform: translateY(1px) translateX(-5px);
-    }
-`;
-
-const ScrollIcon = styled.img`
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    height: 30px;
-    filter: invert(1);
-    animation: 2s arrBounce infinite;
-    
-    @keyframes arrBounce {
-        15%, 85%{
-            transform: translateY(0px);
-        } 
-        35%, 65% {
-            transform: translateY(10px);
-        }
-        50% {
-            transform: translateY(5px);
-        }
     }
 `;

@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import App from "../App";
 import NavBar from "./NavBar";
 import { ThemeContext } from "../Theme";
 import styled from "styled-components";

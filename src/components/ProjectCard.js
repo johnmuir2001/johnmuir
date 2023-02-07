@@ -59,6 +59,8 @@ const CardWrapper = styled.div`
         letter-spacing: 5px;
         transition: all 0.4s;
         opacity: 0;
+        font-size: 20px;
+        text-align: center;
         filter: blur(5px);
         pointer-events: none;
     }

@@ -8,8 +8,10 @@ const ThemeProvider = ({ children }) => {
     const toggleTheme = () => {
         if(theme === 'light') {
             setTheme('dark')
+            document.body.style.backgroundColor = "#383838";
         } else {
             setTheme('light')
+            document.body.style.backgroundColor = "white";
         }
     }
 

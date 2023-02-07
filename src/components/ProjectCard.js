@@ -1,38 +1,35 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const ProjectCard = ({ project }) => {
-    const [backgroundPos, setBackgroundPos] = useState("50% 50%")
+    const [backgroundPos, setBackgroundPos] = useState("50% 50%");
+    const navigate = useNavigate();
 
     return (
-        <CardLink to={`${project.url}`}>
-            <CardWrapper 
-                image={project.image_main}
-                imagePos={backgroundPos}
-                className="card"
-                onMouseMove={(e) => setBackgroundPos(`${(((e.clientX - e.target.offsetLeft) - (e.target.offsetWidth/2))/7) + 50}% ${(((e.clientY - e.target.getBoundingClientRect().y) - (e.target.offsetHeight/2))/4) + 50}%`)}
-                onMouseOut={() => setBackgroundPos("50% 50%")}
-            >
-                <h1>{project.name}</h1>
-            </CardWrapper>
-        </CardLink>
+        <CardWrapper 
+            image={project.image_main}
+            imagePos={backgroundPos}
+            className="card"
+            onClick={() => navigate(`${project.url}`)}
+            onMouseMove={(e) => setBackgroundPos(`${(((e.clientX - e.target.offsetLeft) - (e.target.offsetWidth/2))/7) + 50}% ${(((e.clientY - e.target.getBoundingClientRect().y) - (e.target.offsetHeight/2))/4) + 50}%`)}
+            onMouseOut={() => setBackgroundPos("50% 50%")}
+        >
+            <h1>{project.name}</h1>
+        </CardWrapper>
     )
 }
 
 export default ProjectCard;
 
-const CardLink = styled(Link)`
-    width: calc(100% /3);
-`;
-
 const CardWrapper = styled.div`
     position: relative;
+    width: calc(100vw /3);
     background-color: red;
     background-size: auto 130%;
     background-position: ${(props) => props.imagePos};
     background-image: ${(props) => `url(${props.image})`};
-    transition: all 1s cubic-bezier(.24,1.04,.79,1);
+    transition: background-position 1s cubic-bezier(.24,1.04,.79,1), background-size 1s cubic-bezier(.24,1.04,.79,1);
     overflow: hidden;
     display: flex;
     justify-content: center;

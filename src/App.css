@@ -38,70 +38,13 @@
   --accent-color: #00B8E0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   overflow-x: hidden;
   margin: 50px 0 0 0;
-  background-color: var(--primary-background);
-}
-
-#Home {
-  background-color: var(--secondary-background);
 }
 
 * {
   font-family: "HurmeGeometric";
   transition: background-color 0.2s, color 0.2s;
   color: var(--text-color);
-}
-
-/* hero parallax styling */
-/* text in hero */
-.headerText {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  display: grid;
-  place-items: center;
-  z-index: 20;
-  
-  font-size: 160px;
-  font-weight: 900;
-  color: white;
-  mix-blend-mode: difference;
-}
-
-.clouds {
-  transform-origin: bottom;
-  height: 58vh !important;
-  filter: grayscale(100%);
-  animation: cloudScroll 150s linear infinite;
-}
-@keyframes cloudScroll{
-  0%{background-position: 0 0;}
-  100%{background-position: 800px 0;}
-}
-
-.beach {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 100%;
-  min-height: 55%;
-  object-fit: cover;
-  object-position: center;
-  filter: grayscale(100%);
-}
-
-.about {
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

@@ -7,9 +7,7 @@ const App = () => {
   return (
     <>
       <Routes>
-        
         <Route path="/" element={ <Home /> }></Route>
-
         <Route path="/:project_name" element={ <ProjectPage /> }></Route>
       </Routes>
     </>

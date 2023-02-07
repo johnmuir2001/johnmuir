@@ -32,6 +32,7 @@ export default ProjectPage;
 
 const ProjectWrapper = styled.div`
     max-width: 1500px;
+    margin: 0 50px;
 
     img {
         width: 100%;
@@ -45,5 +46,5 @@ const BackLink = styled(Link)`
     padding: 5px 0 0 0;
     text-decoration: none;
     color: var(--secondary-text-color);
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid var(--secondary-text-color);
 `;

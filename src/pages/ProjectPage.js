@@ -18,12 +18,13 @@ const ProjectPage = () => {
     return(
         <ProjectWrapper>
             <BackLink to="/"> &#x3c; back to works</BackLink>
-            <img src={curProject.image_main} />
+            <img src={curProject.image_main} alt="project example" />
             <h1>{curProject.name}</h1>
             <h3>{curProject.subHeading}</h3>
+            {(curProject.project_link !== null) && <a className="projectLink" href={curProject.project_link} target="_blank" rel="noopener noreferrer">{curProject.project_link}</a>}
             <p>{curProject.description}</p>
-            <img src={curProject.image_main} />
-            <img src={curProject.image_main} />
+            <img src={curProject.image_main} alt="project example" />
+            <img src={curProject.image_main} alt="project example" />
         </ProjectWrapper>
     )
 }
@@ -36,6 +37,22 @@ const ProjectWrapper = styled.div`
 
     img {
         width: 100%;
+    }
+
+    h1 {
+        margin: 10px 0 0 0;
+    }
+    h3 {
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        color: var(--secondary-text-color);
+    }
+    .projectLink {
+        color: var(--accent-color);
+        margin: 0;
+    }
+    p {
+        font-size: 14px;
     }
 `;
 

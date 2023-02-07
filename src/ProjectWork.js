@@ -17,7 +17,7 @@ export const projects = [
         subHeading: "Wordpress, Gatsby, GraphQL",
         description: "I helped in the development of the Code Nation company website. I was first part of the team that made the website using the framework Gatsby.js and GraphQL. Later the website was updated to Wordpress and again I was part of the team who re-created the website in wordpress.",
         image_showcase: [codeYellow_main],
-        project_link: null
+        project_link: "https://wearecodenation.com/"
     },
     {
         name: "Code Nation Christmas 2022",

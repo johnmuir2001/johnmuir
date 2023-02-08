@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
 
     return (
         <CardWrapper 
-            image={project.image_main}
+            image={project.thumbnail}
             imagePos={backgroundPos}
             className="card"
             onClick={() => navigate(`${project.url}`)}
@@ -25,7 +25,6 @@ export default ProjectCard;
 const CardWrapper = styled.div`
     position: relative;
     width: calc(100vw /3);
-    background-color: red;
     background-size: auto 130%;
     background-position: ${(props) => props.imagePos};
     background-image: ${(props) => `url(${props.image})`};

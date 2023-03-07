@@ -24,7 +24,7 @@ export default Home;
 const ProjectCardWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
 
   box-sizing: border-box;

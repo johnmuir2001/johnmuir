@@ -28,19 +28,24 @@
   --secondary-text-color: #494949;
   --secondary-background: #eeecec;
   --accent-color: #00ccff;
+  --nav-color: #ffffff;
+  --invert: 0%;
 }
 
 .dark {
   --primary-background: #383838;
   --text-color: #e6e6e6;
-  --secondary-text-color: #8b8b8b;
+  --secondary-text-color: #ffffff;
   --secondary-background: #515151;
   --accent-color: #00B8E0;
+  --nav-color: #272727;
+  --invert: 100%;
 }
 
 body {
   overflow-x: hidden;
   margin: 50px 0 0 0;
+  background-color: #383838;
 }
 
 * {

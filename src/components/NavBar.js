@@ -2,14 +2,15 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../Theme";
-import paintStroke from "../assets/images/paintStroke.png";
+// import paintStroke from "../assets/images/paintStroke.png";
 
 const NavBar = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
         <NavWrapper>
-            <h3 style={{backgroundImage: `url(${paintStroke})`}}>JOHN MUIR</h3>
+            {/* <h3 style={{backgroundImage: `url(${paintStroke})`}}>JOHN MUIR</h3> */}
+            <LeftNav to="/">JOHN MUIR</LeftNav>
             <RightNavSection>
                 <Link to="/">WORK</Link>
                 <Link to="/about">ABOUT</Link>
@@ -27,7 +28,7 @@ const NavWrapper = styled.div`
     left: 0;
     height: 50px;
     width: 100vw;
-    background-color: var(--primary-background);
+    background-color: var(--nav-color);
     box-sizing: border-box;
     padding: 0 50px;
     z-index: 10;
@@ -44,6 +45,13 @@ const NavWrapper = styled.div`
         width: 130px;
         color: var(--primary-background);
     }
+`;
+
+const LeftNav = styled(Link)`
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
 `;
 
 const RightNavSection = styled.div`

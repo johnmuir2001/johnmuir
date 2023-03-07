@@ -50,12 +50,11 @@ const CardWrapper = styled.div`
     }
 
     &:hover::before {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
     h1 {
         color: white;
-        letter-spacing: 5px;
         transition: all 0.4s;
         opacity: 0;
         font-size: 20px;
@@ -65,7 +64,6 @@ const CardWrapper = styled.div`
     }
 
     &:hover h1 {
-        letter-spacing: 1px;
         opacity: 1;
         filter: blur(0px);
     }

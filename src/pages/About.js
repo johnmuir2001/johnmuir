@@ -6,9 +6,7 @@ const About = () => {
 
     return (
         <AboutWrapper>
-            <header>
-                
-            </header>
+            <header></header>
             <h1>About Me</h1>
             <div id="aboutText">
                 <AboutSection>
@@ -66,7 +64,7 @@ const About = () => {
 export default About;
 
 const AboutWrapper = styled.div`
-    height: 100vh;
+    height: calc(100vh - 50px);
     overflow-x: hidden;
     perspective: 300px;
     perspective-origin: center top;

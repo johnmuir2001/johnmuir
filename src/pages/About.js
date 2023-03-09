@@ -75,7 +75,6 @@ const AboutWrapper = styled.div`
     header {
         height: 70vh;
         background: url(${beach});
-        /* filter: grayscale(100%); */
         background-size: cover;
         background-position: center center;
         position: relative;

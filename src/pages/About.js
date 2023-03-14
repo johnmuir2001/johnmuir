@@ -12,15 +12,68 @@ const About = () => {
                 <AboutSection>
                     <h3><span>Who am I?</span></h3>
                     <p>
-                        I am a motivated, and quality driven person. I have an aptitude for learning and am passionate about design and problem solving. <br/><br/>
-                        I am inquisitive, have an attention to detail, and love creating things. This is why I was drawn to animation in my free time. I am self taught in 3D modeling, texturing, and animation all using the software Blender. This passion also led me to create some animations to be used in Code Nation which are on my works page.
+                    I am a motivated, and quality driven person. Furthermore, I have an aptitude for learning and am
+passionate about design and problem-solving. Inspired in school to create and have a passion
+for technology and coding which led me into an apprenticeship opportunity at Code Nation.<br/><br/>
+I am currently a Lead Instructor at Code Nation, one of the UK's leading independent training
+providers and proud to have contributed to the development of our successful curricula and led
+the training of over 70 students in the last 9 months, and involved in changing the lives of over
+200 since starting at Code Nation. <br/><br/>
+Whilst I've enjoyed the process of imparting knowledge to others, I'm now at the point where
+my passion for animation and creativity is where I want to spend the majority of my time.
+
+
+                        {/* I am a motivated, and quality driven person. I have an aptitude for learning and am passionate about design and problem solving. <br/><br/>
+                        I am inquisitive, have an attention to detail, and love creating things. This is why I was drawn to animation in my free time. I am self taught in 3D modeling, texturing, and animation all using the software Blender. This passion also led me to create some animations to be used in Code Nation which are on my works page. */}
                     </p>
                 </AboutSection>
                 <AboutSection>
                     <h3><span>The journey so far</span></h3>
                     <p>
-                        I gained a Level 2 qualification from a 3 week software develop course which lead me to become a full-stack developer and complete a Level 4 apprenticeship in software development. <br/><br/>
-                        After completeing the apprenticeship I became a teacher where I taught front end development skills on a short 12 week bootcamp at Code Nation. As well as teaching I also worked on some projects for the company such as creating a website that holds an online version of the course, I helped create the companies website, and also helped develop the curriculum.
+                    Lead Instructor<br/>
+Code Nation - UK Digital Training Provider<br/>
+Lead Instructor for the front end section of the software development course and have
+trained over 70 students<br/>
+Coaching and mentoring new Code Nation Instructors on the curriculum and content<br/>
+Involved in the curriculum development of our Software courses<br/>
+Developing a Code Nation app for hosting video content for students<br/><br/>
+
+Apprentice / Junior Developer<br/>
+Code Nation - UK Digital Training Provider<br/>
+Supported the delivery of the software development bootcamp<br/><br/>
+
+School / Pre-Work<br/>
+I and a small team spent a month in Swaziland, Africa, where we worked on a number of
+conservation projects as well as building a kitchen for a primary school in a remote area<br/>
+I spent a week in a structural engineering company where I picked up basic metal work skills
+such as welding and office support functions<br/>
+I was drawn to product and design during A-levels and whilst at school I set up a business
+which designed, developed and manufactured innovative mobile Phone stands (www.easi-
+stand.com)<br/>
+
+I was a Chorister in the Chester Cathedral Choir for 7 years and ended with me being the
+Head Chorister
+
+
+                        {/* I gained a Level 2 qualification from a 3 week software develop course which lead me to become a full-stack developer and complete a Level 4 apprenticeship in software development. <br/><br/>
+                        After completeing the apprenticeship I became a teacher where I taught front end development skills on a short 12 week bootcamp at Code Nation. As well as teaching I also worked on some projects for the company such as creating a website that holds an online version of the course, I helped create the companies website, and also helped develop the curriculum. */}
+                    </p>
+                </AboutSection>
+                <AboutSection>
+                    <h3><span>Education</span></h3>
+                    <p>
+                    Level 4 Software Development Methodologies
+BCS <br/> Code Nation<br/><br/>
+Level 2 IT User Skills Software Develpoment
+TLM <br/> Code Nation<br/><br/>
+A-Levels
+Maths (C), Business Studies (B), Design & Technology:
+Product Design (A)<br/>
+Abbey Gate College<br/><br/>
+10 GCSEs A-C
+Maths (7), English (6), Physics (A), Chemistry (C)<br/>
+Abbey Gate College
+            
                     </p>
                 </AboutSection>
                 <SocialsSection>

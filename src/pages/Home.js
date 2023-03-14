@@ -28,7 +28,7 @@ const Home = () => {
     <HomeWrapper>
       <header></header>
       <div id="landingContent">
-        <h1>Hi, I'm John</h1>
+        <h1>I'm John</h1>
         <h2>I am a Full-stack Web Developer and Animator</h2>
       </div>
       

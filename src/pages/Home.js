@@ -29,7 +29,7 @@ const Home = () => {
       <header></header>
       <div id="landingContent">
         <h1>I'm John</h1>
-        <h2>I am a Full-stack Web Developer and Animator</h2>
+        <h2>A Full-stack Web Developer and Animator</h2>
       </div>
       
       <div id="work">

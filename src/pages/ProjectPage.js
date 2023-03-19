@@ -32,11 +32,17 @@ const ProjectPage = () => {
             <h3>{curProject.subHeading}</h3>
             {(curProject.project_link !== null) && <a className="projectLink" href={curProject.project_link} target="_blank" rel="noopener noreferrer">{curProject.project_link}</a>}
             <p>{curProject.description}</p>
-            {(curProject?.main?.type === "video") ? (
-                <iframe src={`https://www.youtube.com/embed/${curProject.main.media}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>                
-            ):(
-                <img src={curProject.main.media} alt="project example" />
-            )}
+            {curProject?.main.map((work, index) => {
+                return (
+                    <div key={index}>
+                        {(work?.type === "video") ? (
+                            <iframe src={`https://www.youtube.com/embed/${work.media}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>                
+                        ):(
+                            <img src={work.media} alt="project example" />
+                        )}
+                    </div>
+                )
+            })}
             {/* <img src={curProject.image_main} alt="project example" />
             <img src={curProject.image_main} alt="project example" /> */}
         </ProjectWrapper>

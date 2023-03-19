@@ -30,19 +30,19 @@ my passion for animation and creativity is where I want to spend the majority of
                 <AboutSection>
                     <h3><span>The journey so far</span></h3>
                     <p>
-                    Lead Instructor<br/>
-Code Nation - UK Digital Training Provider<br/>
+                    <h4>Lead Instructor</h4>
+                    <b>Code Nation - UK Digital Training Provider</b><br/>
 Lead Instructor for the front end section of the software development course and have
 trained over 70 students<br/>
 Coaching and mentoring new Code Nation Instructors on the curriculum and content<br/>
 Involved in the curriculum development of our Software courses<br/>
 Developing a Code Nation app for hosting video content for students<br/><br/>
 
-Apprentice / Junior Developer<br/>
-Code Nation - UK Digital Training Provider<br/>
+<h4>Apprentice / Junior Developer</h4>
+<b>Code Nation - UK Digital Training Provider</b><br/>
 Supported the delivery of the software development bootcamp<br/><br/>
 
-School / Pre-Work<br/>
+<h4>School / Pre-Work</h4>
 I and a small team spent a month in Swaziland, Africa, where we worked on a number of
 conservation projects as well as building a kitchen for a primary school in a remote area<br/>
 I spent a week in a structural engineering company where I picked up basic metal work skills
@@ -63,16 +63,16 @@ Head Chorister
                     <h3><span>Education</span></h3>
                     <p>
                     Level 4 Software Development Methodologies
-BCS <br/> Code Nation<br/><br/>
+BCS <br/> <b>Code Nation</b><br/><br/>
 Level 2 IT User Skills Software Develpoment
-TLM <br/> Code Nation<br/><br/>
+TLM <br/> <b>Code Nation</b><br/><br/>
 A-Levels
 Maths (C), Business Studies (B), Design & Technology:
 Product Design (A)<br/>
-Abbey Gate College<br/><br/>
+<b>Abbey Gate College</b><br/><br/>
 10 GCSEs A-C
 Maths (7), English (6), Physics (A), Chemistry (C)<br/>
-Abbey Gate College
+<b>Abbey Gate College</b>
             
                     </p>
                 </AboutSection>
@@ -181,8 +181,18 @@ const AboutSection = styled.div`
     }
 
     p {
-        margin: 0;
+        margin: 10px 0 0 0;
         width: 60%;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    b {
+        font-weight: 400;
+        color: var(--accent-color);
     }
 `;
 

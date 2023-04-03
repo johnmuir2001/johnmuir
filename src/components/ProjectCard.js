@@ -71,15 +71,25 @@ const CardWrapper = styled.div`
 
     @media screen and (max-width:830px){
         & {
-            width: calc((100vw /1) - 2px);
+            width: calc((100vw /2) - 2px);
             margin: 1px; 
             background-size: cover;
             background-position: center;
         }
 
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+            background-size: cover;
+        }
+
         &::before {
             background-color: rgba(0, 0, 0, 0.4);
         }
+
+        &:hover::before {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
         h1 {
             opacity: 1;
             filter: blur(0px);

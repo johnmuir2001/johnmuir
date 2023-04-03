@@ -53,3 +53,9 @@ body {
   transition: background-color 0.2s, color 0.2s;
   color: var(--text-color);
 }
+
+@media screen and (max-width:830px){
+  body {
+    margin: 0 0 50px 0;
+  }
+}

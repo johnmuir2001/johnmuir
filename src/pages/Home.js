@@ -59,6 +59,7 @@ const HomeWrapper = styled.div`
   perspective: 300px;
   perspective-origin: center top;
   transform-style: preserve-3d;
+  width: 100vw;
 
   header {
     height: calc(100vh - 50px);
@@ -69,7 +70,6 @@ const HomeWrapper = styled.div`
     vertical-align: top;
     transform-origin: center top;
     transform: translateZ(-300px) scale(2);
-    filter: grayscale(100%);
   }
 
   #landingContent {
@@ -90,6 +90,7 @@ const HomeWrapper = styled.div`
     }
     h2 {
       font-size: 40px;
+      color: white;
     }
   }
 
@@ -102,7 +103,7 @@ const HomeWrapper = styled.div`
 
   @media screen and (max-width:830px){
         & {
-            width: calc((100vw /1) - 2px);
+            width: 100vw;
             margin: 1px; 
             background-size: cover;
             background-position: center;
@@ -116,6 +117,31 @@ const HomeWrapper = styled.div`
             filter: blur(0px);
             font-size: 13px;
         }
+        header {
+          background-size: auto 100%;
+          background-position: 35% 50%;
+        }
+
+        #landingContent {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: calc(100vh - 50px);
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 0 30px 0 10px;
+          box-sizing: border-box;
+
+          h1 {
+            font-size: 60px;
+          }
+          h2 {
+            font-size: 30px;
+          }
+        }
   }
 `;
 
@@ -124,8 +150,15 @@ const ProjectCardWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 100%;
-
   box-sizing: border-box;
+  padding-bottom: 0px;
+
+
+  @media screen and (max-width:830px){
+    & {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 const FilterWrapper = styled.div`

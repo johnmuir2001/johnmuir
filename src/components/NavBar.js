@@ -9,9 +9,9 @@ const NavBar = () => {
 
     return (
         <NavWrapper>
-            {/* <h3 style={{backgroundImage: `url(${paintStroke})`}}>JOHN MUIR</h3> */}
-            <LeftNav to="/">JOHN MUIR</LeftNav>
+            <LeftNav to="/" className="desktop_home">JOHN MUIR</LeftNav>
             <RightNavSection>
+                <Link to="/" className="mobile_home">HOME</Link>
                 <Link to="/">WORK</Link>
                 <Link to="/about">ABOUT</Link>
                 <ThemeButton col={theme} onClick={() => toggleTheme()}></ThemeButton>
@@ -36,6 +36,11 @@ const NavWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
 
+
+    .mobile_home {
+        display: none;
+    }
+
     h3 {
         margin: 0;
         display: grid;
@@ -45,6 +50,18 @@ const NavWrapper = styled.div`
         width: 130px;
         color: var(--primary-background);
     }
+
+    @media screen and (max-width:830px){
+        & {
+            transform: translateY(-100%);
+            top: 100%;
+        }
+
+        .mobile_home {
+            display: block;
+        }
+
+    }
 `;
 
 const LeftNav = styled(Link)`
@@ -52,6 +69,13 @@ const LeftNav = styled(Link)`
     text-decoration: none;
     font-weight: 900;
     font-size: 20px;
+    display: block;
+
+    @media screen and (max-width:830px){
+        & {
+            display: none;
+        }
+    }
 `;
 
 const RightNavSection = styled.div`
@@ -66,6 +90,13 @@ const RightNavSection = styled.div`
 
         &:hover {
             opacity: 0.6;
+        }
+    }
+
+    @media screen and (max-width:830px){
+        & {
+            justify-content: space-between;
+            width: 100%;
         }
     }
 `;

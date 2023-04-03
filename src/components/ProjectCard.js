@@ -24,7 +24,7 @@ export default ProjectCard;
 
 const CardWrapper = styled.div`
     position: relative;
-    width: calc(100vw /3);
+    width: calc((100vw /3) - 4px);
     background-size: auto 130%;
     background-position: ${(props) => props.imagePos};
     background-image: ${(props) => `url(${props.image})`};
@@ -34,6 +34,7 @@ const CardWrapper = styled.div`
     justify-content: center;
     align-items: center;
     aspect-ratio: 5/3;
+    margin: 2px; 
     cursor: pointer;
 
     &:hover {
@@ -57,7 +58,7 @@ const CardWrapper = styled.div`
         color: white;
         transition: all 0.4s;
         opacity: 0;
-        font-size: 20px;
+        font-size: 1.5vw;
         text-align: center;
         filter: blur(5px);
         pointer-events: none;
@@ -66,5 +67,23 @@ const CardWrapper = styled.div`
     &:hover h1 {
         opacity: 1;
         filter: blur(0px);
+    }
+
+    @media screen and (max-width:830px){
+        & {
+            width: calc((100vw /1) - 2px);
+            margin: 1px; 
+            background-size: cover;
+            background-position: center;
+        }
+
+        &::before {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        h1 {
+            opacity: 1;
+            filter: blur(0px);
+            font-size: 13px;
+        }
     }
 `;

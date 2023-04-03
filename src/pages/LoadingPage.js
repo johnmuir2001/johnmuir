@@ -34,7 +34,7 @@ const DotsBox = styled.div`
     width: 100px;
 
     div {
-        background-color: #f5b32f;
+        background-color: var(--accent-color);
         height: 25px;
         width: 25px;
         border-radius: 100%;

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { projects } from "../ProjectWork";
 import ProjectCard from "../components/ProjectCard";
-import beach from "../assets/images/beach.webp";
+import beach from "../assets/images/beach_bw.webp";
 
 
 const Home = () => {
@@ -34,9 +34,9 @@ const Home = () => {
       
       <div id="work">
         <FilterWrapper pos={sliderPos}>
-          <button onClick={() => setProjectFilter("all")}>All Work</button>
-          <button onClick={() => setProjectFilter("development")}>Development</button>
-          <button onClick={() => setProjectFilter("animation")}>Animation</button>
+          <button className={projectFilter === "all" ? "active" : ""} onClick={() => setProjectFilter("all")}>All Work</button>
+          <button className={projectFilter === "development" ? "active" : ""} onClick={() => setProjectFilter("development")}>Development</button>
+          <button className={projectFilter === "animation" ? "active" : ""} onClick={() => setProjectFilter("animation")}>Animation</button>
           <div id="bar"></div>
         </FilterWrapper>
         <ProjectCardWrapper>
@@ -99,6 +99,24 @@ const HomeWrapper = styled.div`
     background-color: var(--primary-background);
     transform: translateZ(0);
   }
+
+  @media screen and (max-width:830px){
+        & {
+            width: calc((100vw /1) - 2px);
+            margin: 1px; 
+            background-size: cover;
+            background-position: center;
+        }
+
+        &::before {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        h1 {
+            opacity: 1;
+            filter: blur(0px);
+            font-size: 13px;
+        }
+  }
 `;
 
 const ProjectCardWrapper = styled.div`
@@ -132,5 +150,29 @@ const FilterWrapper = styled.div`
     top: calc(100% - 3px);
     left: ${(props) => props.pos.left};
     transition: all 0.5s;
+  }
+
+  @media screen and (max-width:830px){
+    & {
+      margin: 0;
+      padding: 10px 0;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    button {
+      font-size: 15px;
+      padding: 6px 16px;
+    }
+
+    #bar {
+      display: none;
+    }
+
+    .active {
+      color: var(--accent-color);
+    }
   }
 `;

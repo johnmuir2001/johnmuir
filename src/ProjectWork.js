@@ -77,12 +77,12 @@ export const projects = [
         tags: ["development"]
     },
     {
-        name: "Stylised Head",
+        name: "Stylised Character Head",
         thumbnail: stylised_head,
         main: [{type: "image", media: stylised_head}, {type: "video", media: "bWQlVIOI4W8"}],
-        url: "stylised-head",
+        url: "stylised-character-head",
         subHeading: "Blender",
-        description: "This was my first stylised character head, it was also my first time texturing a character to add realisim to the character. I used Blender 3D for all parts of the process; modeling, sculpting, texturing/shading, lightning and was rendered in cycles.",
+        description: "This was my first stylised character head, it was also my first time texturing a character for stylised realisim. I used Blender 3D for all parts of the process; modeling, sculpting, texturing/shading, lightning and was rendered in cycles.",
         project_link: null,
         tags: ["animation"]
     },
@@ -92,7 +92,7 @@ export const projects = [
         main: [{type: "image", media: cn_small_anim}, {type: "image", media: cn_big_anim}, {type: "image", media: cn_glitch_anim}, {type: "image", media: cn_st_p_anim}],
         url: "cn-logo-animations",
         subHeading: "Blender, HTML, CSS",
-        description: "This is what started me making animations for Code Nation. I made some of these small logo animations in my own time which got used by Code Nation which then led to me making more for the company, such as the CHristmas 2022 and Halloween 2022 animations. Some of them I made using Blender 3D, others I animated using HTML and CSS.",
+        description: "These were my first logo animations and I used Code Nation as my first 'dummy' client. I created these in my own time and 'pitched' the concepts to the CTO. They were used extensively and led to me making more for the company, such as the Christmas and Halloween animations. I used a mix of Blender 3D, HTML & CSS.",
         project_link: null,
         tags: ["animation"]
     },
@@ -102,7 +102,7 @@ export const projects = [
         main: [{type: "image", media: nw_0}, {type: "image", media: nw_1}, {type: "image", media: nw_2}],
         url: "nationwide-learning-platform",
         subHeading: "HTML, CSS, JavaScript",
-        description: "Nationwide Building Society came to COde Nation to ask for a platform or tools that can be used to help upskill 16-18 year olds in software development. I made the platform that had a couple tools that could be used to demonstrate what code produces. I first made a split-screen website, on the left was some HTML code and the right was what the HTML code produces. Then someone hovered over the HTML code, the corresponding part of the website would also be highlighted to see what the code produces. I then built an in browser code editor that code be used to demonstrate CSS and how to add style to the HTML code.",
+        description: "I was asked to design and create a platform for Nationwide Building Society to be used to help upskill 16-18 year olds in software development. The main feature was to showcase coding fundamentals on a platform which could be used by anyone to demonstrate what code can produce. Having worked with the business engagement team, we decided on a split-screen website; on the left with HTML code, and the right showing what the HTML code produces. An additional feature I thought would work well for the audience was to hover over the HTML code and the corresponding part of the website would  be highlighted, again, to see what the code can produce. I then built an 'in browser' code editor that would demonstrate CSS logic and how it can affect the HTML code.",
         project_link: null,
         tags: ["development"]
     }

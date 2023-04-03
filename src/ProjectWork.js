@@ -26,7 +26,7 @@ export const projects = [
         url: "cn-website",
         subHeading: "Wordpress, Gatsby, GraphQL",
         description: "I was one of a team of three, working on the development of the Code Nation company website. I've been involved in the various stages of development of the site, aligned to the growth of the company - Our first iteration used the framework Gatsby.js and GraphQL. Later, the website was updated to Wordpress to allow multiple user access for a simplified CMS.",
-        project_link: "https://wearecodenation.com/",
+        project_link: [{type:"site", url:"https://wearecodenation.com/"}],
         tags: ["development"]
     },
     {
@@ -56,7 +56,7 @@ export const projects = [
         url: "12-games-of-christmas",
         subHeading: "HTML, CSS, JavaScript",
         description: "I was the lead developer on this project and worked with the business to create an interactive and fun Christmas advent calender, to be used by Code Nation staff and employers. On each of the 12 days, I released a new game, and designed each one so players would compete for the highest scores. I made the games in HTML, CSS, and JavaScript as well as making use of JS canvas to create game graphics.",
-        project_link: "https://christmas-at-codenation.vercel.app/",
+        project_link: [{type:"site", url:"https://christmas-at-codenation.vercel.app/"}, {type:"source", url:"https://github.com/johnmuir2001/christmas-at-codenation"}],
         tags: ["development"]
     },
     {
@@ -66,7 +66,7 @@ export const projects = [
         url: "quiz-app",
         subHeading: "React, Node, MongoDB, Express",
         description: "This was my assessed apprenticeship project that got me a pass for a Level 4 Software Development qualification. The app is built with a MERN stack and is deployed using Netlify for the frontend and Render for the backend. There are 3 user roles; user, admin and super admin. The user only lets you play the quizzes. When you log in as an admin, you can play quizzes as well as view the questions, answers and get stats for each, for example, how many users answered correctly. The super admin user can add new quizzes and remove quizzes.",
-        project_link: "https://quiz-manager-ui.vercel.app/",
+        project_link: [{type: "site", url:"https://quiz-manager-ui.vercel.app/"}, {type: "source", url: "https://github.com/johnmuir2001/QuizManager-ui"}],
         tags: ["development"]
     },
     {

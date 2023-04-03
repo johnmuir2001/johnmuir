@@ -30,7 +30,15 @@ const ProjectPage = () => {
             <BackLink to="/"> &#x3c; back to works</BackLink>
             <h1>{curProject.name}</h1>
             <h3>{curProject.subHeading}</h3>
-            {(curProject.project_link !== null) && <a className="projectLink" href={curProject.project_link} target="_blank" rel="noopener noreferrer">{curProject.project_link}</a>}
+            {(curProject.project_link !== null) && (
+                <>
+                    {curProject.project_link.map((link, index) => {
+                        return (
+                            <a key={index} className="projectLink" href={link.url} target="_blank" rel="noopener noreferrer">{link.type === "site" ? link.url : "Source Code" }</a>
+                        )
+                    })}
+                </>
+            )}
             <p>{curProject.description}</p>
             {curProject?.main.map((work, index) => {
                 return (
@@ -69,7 +77,8 @@ const ProjectWrapper = styled.div`
     }
     .projectLink {
         color: var(--accent-color);
-        margin: 0;
+        text-decoration: none;
+        margin: 0 30px 0 0;
     }
     p {
         font-size: 14px;

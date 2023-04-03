@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../Theme";
-// import paintStroke from "../assets/images/paintStroke.png";
 
 const NavBar = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
@@ -35,6 +34,7 @@ const NavWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 -15px 10px 10px rgb(30, 30, 30);
 
 
     .mobile_home {
@@ -55,6 +55,7 @@ const NavWrapper = styled.div`
         & {
             transform: translateY(-100%);
             top: 100%;
+            box-shadow: 0 15px 10px 10px rgb(30, 30, 30);
         }
 
         .mobile_home {
@@ -140,5 +141,11 @@ const ThemeButton = styled.div`
     &:hover + .themeToggleText {
         opacity: 1;
         transform: translateY(1px) translateX(-5px);
+    }
+
+    @media screen and (max-width:830px){
+        & {
+            display: none;
+        }
     }
 `;

@@ -66,7 +66,7 @@ export const projects = [
         url: "quiz-app",
         subHeading: "React, Node, MongoDB, Express",
         description: "This was my assessed apprenticeship project that got me a pass for a Level 4 Software Development qualification. The app is built with a MERN stack and is deployed using Netlify for the frontend and Render for the backend. There are 3 user roles; user, admin and super admin. The user only lets you play the quizzes. When you log in as an admin, you can play quizzes as well as view the questions, answers and get stats for each, for example, how many users answered correctly. The super admin user can add new quizzes and remove quizzes.",
-        project_link: "https://creative-khapse-11573d.netlify.app",
+        project_link: "https://quiz-manager-ui.vercel.app/",
         tags: ["development"]
     },
     {
@@ -80,16 +80,6 @@ export const projects = [
         tags: ["animation"]
     },
     {
-        name: "Code Nation Logo Animations",
-        thumbnail: cn_logo_anims,
-        main: [{type: "video", media: "6rkmDXnhPFo"}],
-        url: "cn-logo-animations",
-        subHeading: "Blender, HTML, CSS",
-        description: "These were my first logo animations and I used Code Nation as my first 'dummy' client. I created these in my own time and 'pitched' the concepts to the CTO. They were used extensively and led to me making more for the company, such as the Christmas and Halloween animations. I used a mix of Blender 3D, HTML & CSS.",
-        project_link: null,
-        tags: ["animation"]
-    },
-    {
         name: "Nationwide Learning Platform",
         thumbnail: nw_thumbnail,
         main: [{type: "video", media: "-Ak_IXBCB4Y"}],
@@ -98,5 +88,15 @@ export const projects = [
         description: "I was asked to design and create a platform for Nationwide Building Society to be used to help upskill 16-18 year olds in software development. The main feature was to showcase coding fundamentals on a platform which could be used by anyone to demonstrate what code can produce. Having worked with the business engagement team, we decided on a split-screen website; on the left with HTML code, and the right showing what the HTML code produces. An additional feature I thought would work well for the audience was to hover over the HTML code and the corresponding part of the website would  be highlighted, again, to see what the code can produce. I then built an 'in browser' code editor that would demonstrate CSS logic and how it can affect the HTML code.",
         project_link: null,
         tags: ["development"]
+    },
+    {
+        name: "Code Nation Logo Animations",
+        thumbnail: cn_logo_anims,
+        main: [{type: "video", media: "6rkmDXnhPFo"}],
+        url: "cn-logo-animations",
+        subHeading: "Blender, HTML, CSS",
+        description: "These were my first logo animations and I used Code Nation as my first 'dummy' client. I created these in my own time and 'pitched' the concepts to the CTO. They were used extensively and led to me making more for the company, such as the Christmas and Halloween animations. I used a mix of Blender 3D, HTML & CSS.",
+        project_link: null,
+        tags: ["animation"]
     }
 ]

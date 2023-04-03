@@ -123,16 +123,8 @@ const HomeWrapper = styled.div`
         }
 
         #landingContent {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: calc(100vh - 50px);
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
           align-items: flex-start;
-          padding: 0 30px 0 10px;
+          padding: 0 10px 0 10px;
           box-sizing: border-box;
 
           h1 {

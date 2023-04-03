@@ -130,6 +130,30 @@ const AboutWrapper = styled.div`
         background-color: var(--primary-background);
         transform: translateZ(0);
     }
+
+    @media screen and (max-width:830px){
+        header {
+            height: 100vh;
+            background-size: auto 100%;
+            background-position: 35% 50%;
+        }
+
+        h1 {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            font-size: 60px;
+            margin: 0 10px;
+        }
+
+        #aboutText {
+            padding: 50px 30px;
+            box-sizing: border-box;
+            min-height: 100vh;
+            background-color: var(--primary-background);
+            transform: translateZ(0);
+        }
+    }
 `;
 
 const AboutSection = styled.div`
@@ -169,6 +193,22 @@ const AboutSection = styled.div`
     b {
         font-weight: 400;
         color: var(--accent-color);
+    }
+
+    @media screen and (max-width:830px){
+        & {
+            flex-direction: column;
+            margin: 30px 0;
+        }
+
+        h3 {
+            width: 100%;
+            font-size: 40px;
+        }
+
+        p {
+            width: 100%;
+        }
     }
 `;
 

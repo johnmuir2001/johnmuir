@@ -96,4 +96,15 @@ const CardWrapper = styled.div`
             font-size: 13px;
         }
     }
+
+    @media screen and (min-width:2050px){
+        & {
+            width: calc((100vw /4) - 4px);
+        }
+    }
+    @media screen and (min-width:2750px){
+        & {
+            width: calc((100vw /5) - 4px);
+        }
+    }
 `;

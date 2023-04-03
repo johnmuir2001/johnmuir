@@ -5,15 +5,8 @@ import cn_halloween from "./assets/images/cn-halloween-thumbnail.webp";
 import christmas_games from "./assets/images/12-games-thumbnail.webp";
 import quiz_app from "./assets/images/quiz-app-thumbnail.webp";
 import stylised_head from "./assets/images/stylised-character-thumbnail.webp";
-import cn_logo_anims from "./assets/images/cn-logo-anims-thumbnail.webp";
-import cn_small_anim from "./assets/images/cn-short-anim.gif";
-import cn_big_anim from "./assets/images/cn-big-anim.gif";
-import cn_glitch_anim from "./assets/images/cn-glitch-anim.gif";
-import cn_st_p_anim from "./assets/images/cn-st-patricks-anim.gif";
+import cn_logo_anims from "./assets/images/cn-logo-animations-thumbnail.webp";
 import nw_thumbnail from "./assets/images/nw-thumbnail.webp";
-import nw_0 from "./assets/images/nw-0.webp";
-import nw_1 from "./assets/images/nw-1.webp";
-import nw_2 from "./assets/images/nw-2.webp";
 
 export const projects = [
     {
@@ -89,7 +82,7 @@ export const projects = [
     {
         name: "Code Nation Logo Animations",
         thumbnail: cn_logo_anims,
-        main: [{type: "image", media: cn_small_anim}, {type: "image", media: cn_big_anim}, {type: "image", media: cn_glitch_anim}, {type: "image", media: cn_st_p_anim}],
+        main: [{type: "video", media: "6rkmDXnhPFo"}],
         url: "cn-logo-animations",
         subHeading: "Blender, HTML, CSS",
         description: "These were my first logo animations and I used Code Nation as my first 'dummy' client. I created these in my own time and 'pitched' the concepts to the CTO. They were used extensively and led to me making more for the company, such as the Christmas and Halloween animations. I used a mix of Blender 3D, HTML & CSS.",
@@ -99,7 +92,7 @@ export const projects = [
     {
         name: "Nationwide Learning Platform",
         thumbnail: nw_thumbnail,
-        main: [{type: "image", media: nw_0}, {type: "image", media: nw_1}, {type: "image", media: nw_2}],
+        main: [{type: "video", media: "-Ak_IXBCB4Y"}],
         url: "nationwide-learning-platform",
         subHeading: "HTML, CSS, JavaScript",
         description: "I was asked to design and create a platform for Nationwide Building Society to be used to help upskill 16-18 year olds in software development. The main feature was to showcase coding fundamentals on a platform which could be used by anyone to demonstrate what code can produce. Having worked with the business engagement team, we decided on a split-screen website; on the left with HTML code, and the right showing what the HTML code produces. An additional feature I thought would work well for the audience was to hover over the HTML code and the corresponding part of the website would  be highlighted, again, to see what the code can produce. I then built an 'in browser' code editor that would demonstrate CSS logic and how it can affect the HTML code.",

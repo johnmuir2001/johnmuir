@@ -7,6 +7,7 @@ import quiz_app from "./assets/images/quiz-app-thumbnail.webp";
 import stylised_head from "./assets/images/stylised-character-thumbnail.webp";
 import cn_logo_anims from "./assets/images/cn-logo-animations-thumbnail.webp";
 import nw_thumbnail from "./assets/images/nw-thumbnail.webp";
+import cn_easter from "./assets/images/cn-easter-thumbnail.webp";
 
 export const projects = [
     {
@@ -96,6 +97,16 @@ export const projects = [
         url: "cn-logo-animations",
         subHeading: "Blender, HTML, CSS",
         description: "These were my first logo animations and I used Code Nation as my first 'dummy' client. I created these in my own time and 'pitched' the concepts to the CTO. They were used extensively and led to me making more for the company, such as the Christmas and Halloween animations. I used a mix of Blender 3D, HTML & CSS.",
+        project_link: null,
+        tags: ["animation"]
+    },
+    {
+        name: "Code Nation Easter 2023",
+        thumbnail: cn_easter,
+        main: [{type: "video", media: "S_WGiVm9_rk"}],
+        url: "cn-easter-animation",
+        subHeading: "Blender",
+        description: "A full end to end production, from concept, ideation, creation, animation and sound design. Adopted and deployed across all social channels.",
         project_link: null,
         tags: ["animation"]
     }

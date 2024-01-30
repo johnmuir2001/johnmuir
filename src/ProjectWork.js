@@ -8,6 +8,12 @@ import stylised_head from "./assets/images/stylised-character-thumbnail.webp";
 import cn_logo_anims from "./assets/images/cn-logo-animations-thumbnail.webp";
 import nw_thumbnail from "./assets/images/nw-thumbnail.webp";
 import cn_easter from "./assets/images/cn-easter-thumbnail.webp";
+import cn_halloween_23 from "./assets/images/cn-halloween-23-thumbnail.webp";
+import digi_dna from "./assets/images/digi-dna-thumbnail.webp";
+import digi_dna_quizzes from "./assets/images/digi-dna-quizzes.webp";
+import digi_dna_results from "./assets/images/digi-dna-results.webp";
+import digi_dna_quiz from "./assets/images/digi-dna-quiz.webp";
+import digi_dna_admin from "./assets/images/digi-dna-admin.webp";
 
 export const projects = [
     {
@@ -109,5 +115,25 @@ export const projects = [
         description: "A full end to end production, from concept, ideation, creation, animation and sound design. Adopted and deployed across all social channels.",
         project_link: null,
         tags: ["animation"]
+    },
+    {
+        name: "Code Nation Halloween 2023",
+        thumbnail: cn_halloween_23,
+        main: [{type: "video", media: "ACgY7iZ8IiU"}],
+        url: "cn-halloween-animation-23",
+        subHeading: "Blender",
+        description: "A full end to end production, from concept, ideation, creation, animation and sound design. Adopted and deployed across all social channels. The idea was to try and replicate a clamation style and stop motion look.",
+        project_link: null,
+        tags: ["animation"]
+    },
+    {
+        name: "digiDNA",
+        thumbnail: digi_dna,
+        main: [{type: "image", media: digi_dna_quizzes}, {type: "image", media: digi_dna_quiz},{type: "image", media: digi_dna_results},{type: "image", media: digi_dna_admin}],
+        url: "digi-dna",
+        subHeading: "React, Node, MongoDB, AWS",
+        description: "digiDNA is a psychometric testing platform to tell people entering the tech industry what area they would best be suited for. I lead the planning, design and development of this project to its current iteration. The website was made using React with a node server which was hosted on an AWS EC2 instance. An admin account can be created for a company account which they can then invite users with. Users can then complete the questionnaires and get a radar diagram back which represents the strong/weak attributes of a tech worker. Along side the radar chart the top three most suitable jobs are also shown to the User. An Admin can overview all of the invited users' results and compare them against the average results of everyone in the account. Below are some screenshots of the user and admin pages.",
+        project_link: [{type: "site", url:"https://www.digidna.ai/"}],
+        tags: ["development"]
     }
 ]
